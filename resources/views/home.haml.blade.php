@@ -35,3 +35,7 @@
     .container
       .content
         .title Laravel 5
+        -if(isset($seriais))
+          -foreach ($seriais as $index => $serial)
+            %b= $serial
+            %br
