@@ -16,5 +16,5 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::group(['middleware' => ['auth']], function () {
   Route::get('/' , 'KeyController@geraKey');
-  Route::get('/logout', 'Auth\AuthController@logout');
 });
+Route::get('/logout', 'Auth\AuthController@logout');

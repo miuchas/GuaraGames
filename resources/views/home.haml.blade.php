@@ -3,34 +3,8 @@
   %head
     %title Laravel
     %link{:href => "https://fonts.googleapis.com/css?family=Lato:100", :rel => "stylesheet", :type => "text/css"}
-    :css
-      html, body {
-          height: 100%;
-      }
+    %link{:href => "css/app.css", :rel => "stylesheet", :type => "text/css"}
 
-      body {
-          margin: 0;
-          padding: 0;
-          width: 100%;
-          display: table;
-          font-weight: 100;
-          font-family: 'Lato';
-      }
-
-      .container {
-          text-align: center;
-          display: table-cell;
-          vertical-align: middle;
-      }
-
-      .content {
-          text-align: center;
-          display: inline-block;
-      }
-
-      .title {
-          font-size: 96px;
-      }
   %body
     .container
       .content
@@ -39,4 +13,4 @@
           -foreach ($seriais as $index => $serial)
             %b= $serial
             %br
-        %a{:href =>"/logout"} Sair
+        %a.btn.btn-primary{:href =>"/logout", :role => "button"} Sair
