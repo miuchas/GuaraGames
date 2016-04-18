@@ -39,3 +39,4 @@
           -foreach ($seriais as $index => $serial)
             %b= $serial
             %br
+        %a{:href =>"/logout"} Sair

@@ -11,8 +11,12 @@
 |
 */
 Route::group(['middleware' => ['web']], function () {
-  //diretorio padrão
-  Route::get('/', function () { return view('home'); });
+  Route::auth();
   //demais diretorios
-  Route::get('/home', 'KeyController@geraKey');
+  Route::get('/logout', 'Auth\AuthController@logout');
+});
+
+Route::group(['middleware' => ['auth']], function () {
+  Route::get('/' , 'KeyController@geraKey');
+
 });
