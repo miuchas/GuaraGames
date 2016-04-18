@@ -15,6 +15,7 @@ class CreateSerialKeysTable extends Migration
         Schema::create('serial_keys', function (Blueprint $table) {
             $table->increments('id');
             $table->string('game', 30);
+            $table->string('serialkey', 30)->unique();
             $table->tinyInteger('usado');
             $table->integer('usuario');
             $table->timestamps();
