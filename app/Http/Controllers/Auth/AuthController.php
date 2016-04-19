@@ -68,11 +68,11 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
+      var_dump($data);
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
-            //adicionais
             'login' => $data['login'],
             'telefone' => $data['telefone'],
             'datanascimento' => date('Y-m-d'),
