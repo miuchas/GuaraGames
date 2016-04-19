@@ -5782,5 +5782,9 @@ body #menu {
   body #menu p img {
     width: 50px;
     height: 50px; }
+  body #menu ul.dropdown-menu {
+    left: initial;
+    right: 30px;
+    top: 45px; }
 
 /*# sourceMappingURL=app.css.map */
