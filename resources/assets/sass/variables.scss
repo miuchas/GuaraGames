@@ -1,0 +1,29 @@
+/* LOGIN */
+$login-pattern: url('/imagens/login/textura-login.png');
+
+@font-face {
+  font-family: "TitilliumRegular";
+
+  src: url('/fonts/Titillium/TitilliumWeb-Regular.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Titillium/TitilliumWeb-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TitilliumSemiBold";
+
+  src: url('/fonts/Titillium/TitilliumWeb-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Titillium/TitilliumWeb-SemiBold.ttf') format('truetype');
+  // font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TitilliumBold";
+
+  src: url('/fonts/Titillium/TitilliumWeb-Bold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Titillium/TitilliumWeb-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
