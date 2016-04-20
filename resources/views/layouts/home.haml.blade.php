@@ -20,8 +20,6 @@
     %body
       %nav.navbar.navbar-default.navbar-fixed-top#menu
         @include('paginas/menu')
-      .container-fluid
+      .col-xs-12#corpo
         .row
-          .col-xs-12
-            #corpo
-              @yield('conteudo_principal')
+          @yield('conteudo_principal')
