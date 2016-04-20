@@ -12,7 +12,7 @@
     %link{:href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css", :rel => "stylesheet"}/
   %body
     %p
-      %link{:href => "{{ elixir('css/app.css') }}", :rel => "stylesheet"}
+      %link{:href => "@{{ elixir('css/app.css') }}", :rel => "stylesheet"}
       :css
         body {
             font-family: 'Lato';
@@ -31,20 +31,20 @@
             %span.icon-bar
             %span.icon-bar
           / Branding Image
-          %a.navbar-brand{:href => "{{ url('/') }}"}
+          %a.navbar-brand
             Laravel
         #app-navbar-collapse.collapse.navbar-collapse
           / Left Side Of Navbar
           %ul.nav.navbar-nav
             %li
-              %a{:href => "{{ url('/home') }}"} Home
+              %a{:href => "@{{ url('/home') }}"} Home
           / Right Side Of Navbar
           %ul.nav.navbar-nav.navbar-right
             @if (Auth::guest())
             %li
-              %a{:href => "{{ url('/login') }}"} Login
+              %a{:href => "@{{ url('/login') }}"} Login
             %li
-              %a{:href => "{{ url('/register') }}"} Register
+              %a{:href => "@{{ url('/register') }}"} Register
             @else
             %li.dropdown
               %a.dropdown-toggle{"aria-expanded" => "false", "data-toggle" => "dropdown", :href => "#", :role => "button"}
@@ -52,7 +52,7 @@
                 %span.caret
               %ul.dropdown-menu{:role => "menu"}
                 %li
-                  %a{:href => "{{ url('/logout') }}"}
+                  %a{:href => "@{{ url('/logout') }}"}
                     %i.fa.fa-btn.fa-sign-out>
                     Logout
             @endif
@@ -60,4 +60,4 @@
     / JavaScripts
     %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"}
     %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"}
-    %script{:src => "{{ elixir('js/app.js') }}"}
+    %script{:src => "@{{ elixir('js/app.js') }}"}
