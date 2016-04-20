@@ -5,22 +5,22 @@
     Jogos
   %p.navbar-text
     Contato
-  @if (Auth::guest())
-  %p.navbar-text.navbar-right
-    %a{:href => "@{{ url('/register') }}"} Register
-    Cadastro
-  %p.navbar-text.navbar-right.login#login_logout.dropdown-toggle.dropdown{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+  @if (!Auth::guest())
+  %p.navbar-text.navbar-right.cadastro
+    %a{:href => "@{{ url('/register') }}"}Cadastro
+  %p.navbar-text.navbar-right.login#login_logout.dropdown-toggle.dropdown{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
     -# %a{:href => "@{{ url('/login') }}"} Login
     Acesso
     %span.caret
     %ul.dropdown-menu{"aria-labelledby" => "login_logout"}
       %li
-        %a{:href => "#"}
-          Login
-        %a{:href => "#"}
-          Senha
+        %form{:role=>"form", :method=>"POST", :action=>"/login"}
+          {!! csrf_field() !!}
+          %input{:type=>"text", :name=>"email", :placeholder=>"EMAIL"}
+          %input{:type=>"password", :name=>"password", :placeholder=>"SENHA"}
+          %button.btn ENTRAR
   @else
-  %p.navbar-text.navbar-right.login#login_logout.dropdown-toggle.dropdown{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+  %p.navbar-text.navbar-right.login#login_logout.dropdown-toggle.dropdown{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
     {{ Auth::user()->name }}
     %span.caret
     %ul.dropdown-menu{"aria-labelledby" => "login_logout"}
