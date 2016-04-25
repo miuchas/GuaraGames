@@ -18,27 +18,28 @@ class MailController extends Controller
     });
   }
 
-  // $login = $request->login_dominio;
-  // $hash = uniqid('', true);
-  // $link = 'https://'.$_SERVER["SERVER_NAME"]."/nova-senha/".$login."/".$hash;
-  //
-  // $view = 'emails.troca_senha';
-  //
-  // $emails = array(env('MAIL_DEFAULT_TEST'));
-  //
-  // $contato_admin = CommonController::getContatoAdministrativo($login);
-  //
-  // $detalhesEmail = array(
-  //   'titulo' => 'Acesso ao painel de controle Task',
-  //   'assunto' => 'Acesso ao painel de controle Task',
-  //   // 'destinatario' => $emails,
-  //   'destinatario' => $contato_admin['email'],
-  //   'remetente' => 'Task',
-  //   'cco' => env('MAIL_DEFAULT_TEST'),
-  //   'login' => $login,
-  //   'link' => $link,
-  //   'nome_contato_admin' => $contato_admin['responsavel'],
-  // );
+  public function emailConfirmacaoCadastro(){
+    // $login = $request->login;
+    // $link = 'https://'.$_SERVER["SERVER_NAME"]."/nova-senha/".$login."/".$hash;
+    //
+    // $view = 'emails.troca_senha';
+    //
+    // $emails = array(env('MAIL_DEFAULT_TEST'));
+    //
+    // $contato_admin = CommonController::getContatoAdministrativo($login);
+    //
+    // $detalhesEmail = array(
+    //   'titulo' => 'Acesso ao painel de controle Task',
+    //   'assunto' => 'Acesso ao painel de controle Task',
+    //   // 'destinatario' => $emails,
+    //   'destinatario' => $contato_admin['email'],
+    //   'remetente' => 'Task',
+    //   'cco' => env('MAIL_DEFAULT_TEST'),
+    //   'login' => $login,
+    //   'link' => $link,
+    //   'nome_contato_admin' => $contato_admin['responsavel'],
+    // );
+  }
 
 
 

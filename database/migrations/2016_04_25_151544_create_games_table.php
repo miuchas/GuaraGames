@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSerialKeysTable extends Migration
+class CreateGamesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,9 @@ class CreateSerialKeysTable extends Migration
      */
     public function up()
     {
-        Schema::create('serial_keys', function (Blueprint $table) {
+        Schema::create('games', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('game')->unsigned();
-            $table->string('serialkey', 30)->unique();
-            $table->tinyInteger('usado');
-            $table->integer('usuario')->unsigned();
+            $table->string('Nome', 100)->unique();
             $table->timestamps();
         });
     }
@@ -29,6 +26,6 @@ class CreateSerialKeysTable extends Migration
      */
     public function down()
     {
-        Schema::drop('serial_keys');
+        Schema::drop('games');
     }
 }

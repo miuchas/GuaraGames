@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('telefone');
             $table->dateTime('datanascimento');
             $table->tinyInteger('tipousuario');
+            $table->tinyInteger('usuarioconfirmado');
             $table->rememberToken();
             $table->timestamps();
         });

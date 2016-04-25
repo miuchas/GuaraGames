@@ -14,8 +14,8 @@ class CreateHistoricosTable extends Migration
     {
         Schema::create('historicos', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('usuario');
-            $table->integer('game');
+            $table->integer('usuario')->unsigned();
+            $table->integer('game')->unsigned();
             $table->integer('keyscriadas');
             $table->timestamps();
         });
