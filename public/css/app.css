@@ -5783,8 +5783,10 @@ body #menu {
   body #menu p.login {
     margin-right: 15px; }
   body #menu p.cadastro {
-    margin-right: 15px;
-    text-decoration: none; }
+    margin-right: 15px; }
+    body #menu p.cadastro a, body #menu p.cadastro a:hover {
+      color: #777;
+      text-decoration: none; }
   body #menu p img {
     width: 50px;
     height: 50px; }
@@ -5847,5 +5849,20 @@ body #corpo {
         height: 200px; }
       body #corpo #banner-j5 .logo .logo-detail img {
         height: 70px; }
+  body #corpo #registro {
+    margin-top: 50px;
+    color: #777; }
+    body #corpo #registro .campo_cadastro {
+      text-align: right;
+      margin: 15px auto;
+      width: 450px; }
+      body #corpo #registro .campo_cadastro span, body #corpo #registro .campo_cadastro input {
+        display: inline-block; }
+      body #corpo #registro .campo_cadastro span {
+        margin-right: 15px; }
+      body #corpo #registro .campo_cadastro input {
+        width: 300px; }
+      body #corpo #registro .campo_cadastro.botao {
+        text-align: center; }
 
 /*# sourceMappingURL=app.css.map */

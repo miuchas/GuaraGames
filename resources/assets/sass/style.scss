@@ -12,7 +12,10 @@ body{
       &.login{ margin-right: 15px; }
       &.cadastro{
         margin-right: 15px;
-        text-decoration: none;
+        a, a:hover{
+          color: #777;
+          text-decoration: none;
+        }
       }
       img{
         width: 50px;
@@ -39,7 +42,8 @@ body{
   }
 
   #corpo{
-      margin-top: 50px;
+    margin-top: 50px;
+
     #banner-j5{
       background-image: url("/images/banner/BG_1280x1024.png");
       background-repeat: no-repeat;
@@ -90,5 +94,30 @@ body{
         }
       }
     }
+
+    #registro{
+      margin-top: 50px;
+      color: #777;
+      .campo_cadastro{
+        text-align: right;
+        margin: 15px auto;
+        width: 450px;
+        span, input{
+          display: inline-block;
+        }
+        span{
+          margin-right: 15px;
+        }
+        input{
+          width: 300px;
+        }
+        &.botao{
+          text-align: center;
+        }
+      }
+    }
+
+    
+
   }
 }

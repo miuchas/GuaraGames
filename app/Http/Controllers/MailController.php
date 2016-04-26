@@ -22,7 +22,6 @@ class MailController extends Controller
   // public function emailConfirmacaoCadastro(Request $request){
   public function emailConfirmacaoCadastro($login, $nome, $email){
     $view = 'emails.confirmacao_cadastro';
-
     // $login = $request->login;
     // $nome = $request->nome;
     // $email = $request->email;
@@ -30,13 +29,10 @@ class MailController extends Controller
     $detalhesEmail = array(
       'titulo' => 'Confirmação de Cadastro Guara Games Studio',
       'assunto' => 'Confirmação de Cadastro Guara Games Studio',
-      // 'destinatario' => $emails,
       'destinatario' => $email,
       'remetente' => 'Guara Games Studio',
       'cco' => 'phelipeevangelistasimimdiniz@gmail.com',
       'login' => $login,
-      // 'link' => $link,
-      'nome_contato_admin' => $nome,
       'nome' => $nome,
     );
     MailController::enviaEmail($view, $detalhesEmail);

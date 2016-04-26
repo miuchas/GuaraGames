@@ -5,11 +5,10 @@
     Jogos
   %p.navbar-text
     Contato
-  @if (!Auth::guest())
+  @if (Auth::guest())
   %p.navbar-text.navbar-right.cadastro
-    %a{:href => "@{{ url('/register') }}"}Cadastro
+    %a{:href => "/register" }Cadastro
   %p.navbar-text.navbar-right.login#login_logout.dropdown-toggle.dropdown{"aria-expanded" => "true", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
-    -# %a{:href => "@{{ url('/login') }}"} Login
     Acesso
     %span.caret
     %ul.dropdown-menu{"aria-labelledby" => "login_logout"}
