@@ -15,10 +15,13 @@ Route::group(['middleware' => ['web']], function () {
 });
 
 Route::group(['middleware' => ['auth']], function () {
-  Route::get('/' , 'KeyController@geraKey');
+  Route::get('/' , 'GeralController@index');
   //operações referentes ao cadastro de games
   Route::get('cadastro-games' , 'CadastroItensController@cadastroGames');
-  Route::post('cadastro-games' , 'CadastroItensController@cadastroGames');
+  Route::post('cadastro-games' , 'CadastroItensController@cadastraGame');
+  //operações referentes a geração de seriais
+  Route::get('gerador-de-seriais' , 'CadastroItensController@cadastroHistoricos');
+  Route::post('gerador-de-seriais' , 'CadastroItensController@cadastraHistorico');
 
 });
 Route::get('/logout', 'Auth\AuthController@logout');

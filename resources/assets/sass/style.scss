@@ -101,14 +101,14 @@ body{
       .campo_cadastro{
         text-align: right;
         margin: 15px auto;
-        width: 450px;
-        span, input{
+        width: 515px;
+        span, input, select{
           display: inline-block;
         }
         span{
           margin-right: 15px;
         }
-        input{
+        input, select{
           width: 300px;
         }
         &.botao{

@@ -11,7 +11,7 @@
         %i.fa.fa-btn.fa-user>
         &nbsp Cadastrar Game
     .campo_cadastro
-      @if (isset($mensagem))
+      @if(isset($mensagem))
       =$mensagem
       @endif
 @endsection

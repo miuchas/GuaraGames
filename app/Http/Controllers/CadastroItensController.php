@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Historico;
 use App\Games;
+use Auth;
 use DB;
 
 class CadastroItensController extends Controller
@@ -17,27 +18,30 @@ class CadastroItensController extends Controller
     }
 
     public function cadastraGame(Request $request){
-      $game = DB::table("games")->select('*')->where('Nome', $request->nome)->get();
-
-      if($game==""){
+      //verifica que o registro ja existe no banco
+      $game = DB::table("games")->select('Nome')->where('Nome', $request->nome)->get();
+      //salva o registro no banco
+      if(empty($game)){
         $games = new Games;
         $games->Nome = $request->nome;
         $games->save();
-
         $mensagem = "O game ".$request->nome." foi adicionado ao banco.";
-        return view('paginas/cadastro-games',['mensagem' => $mensagem]);
       }
-      else{
-        $mensagem = "O game ".$request->nome." já existe no banco.";
-        return view('paginas/cadastro-games',['mensagem' => $mensagem]);
-      }
+      else{ $mensagem = "O game ".$request->nome." já existe no banco."; }
+
+      return view('paginas/cadastro-games',['mensagem' => $mensagem]);
+    }
+
+    public function cadastroHistoricos(){
+      $games = DB::table("games")->select('id', 'Nome')->get();
+      return view('paginas/cadastro-historicos',['games' => $games]);
     }
 
     public function cadastraHistorico(Request $request){
       $historico = new Historico;
-      $historico->usuario = $request->usuario;
+      $historico->usuario = Auth::user()->name;
       $historico->game = $request->game;
-      $historico->keyscriadas = $request->keyscriadas;
+      $historico->keyscriadas = $request->numerokeys;
       $historico->save();
     }
 
