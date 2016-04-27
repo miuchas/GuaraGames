@@ -7,13 +7,30 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Historico;
 use App\Games;
+use DB;
 
 class CadastroItensController extends Controller
 {
+
+    public function cadastroGames(){
+      return view('paginas/cadastro-games');
+    }
+
     public function cadastraGame(Request $request){
-      $games = new Games;
-      $games->Nome = $request->nome;
-      $games->save();
+      $game = DB::table("games")->select('*')->where('Nome', $request->nome)->get();
+
+      if($game==""){
+        $games = new Games;
+        $games->Nome = $request->nome;
+        $games->save();
+
+        $mensagem = "O game ".$request->nome." foi adicionado ao banco.";
+        return view('paginas/cadastro-games',['mensagem' => $mensagem]);
+      }
+      else{
+        $mensagem = "O game ".$request->nome." já existe no banco.";
+        return view('paginas/cadastro-games',['mensagem' => $mensagem]);
+      }
     }
 
     public function cadastraHistorico(Request $request){
