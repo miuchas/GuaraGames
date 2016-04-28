@@ -11,9 +11,7 @@ use DB;
 class GeralController extends Controller
 {
   public function index(){
-    $games = DB::table("games")->select('id', 'Nome')->get();
-    // view()->share('games', $games);
-    return view('home',['games' => $games]);
+    return view('home');
   }
 
   public function administrador(){

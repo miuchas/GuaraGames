@@ -40,8 +40,6 @@ class AuthController extends Controller
     public function __construct()
     {
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
-        $games = DB::table("games")->select('id', 'Nome')->get();
-        view()->share('games', $games);
     }
 
     public function logout(){
