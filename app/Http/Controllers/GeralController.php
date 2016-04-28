@@ -6,11 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Auth;
+use DB;
 
 class GeralController extends Controller
 {
   public function index(){
-    return view('home');
+    $games = DB::table("games")->select('id', 'Nome')->get();
+    // view()->share('games', $games);
+    return view('home',['games' => $games]);
   }
 
   public function administrador(){

@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Auth;
+use DB;
 
 class AuthController extends Controller
 {
@@ -39,6 +40,8 @@ class AuthController extends Controller
     public function __construct()
     {
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+        $games = DB::table("games")->select('id', 'Nome')->get();
+        view()->share('games', $games);
     }
 
     public function logout(){

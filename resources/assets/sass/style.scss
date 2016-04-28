@@ -1,39 +1,45 @@
 body, html{ margin: 0; height: 100%; font-family: "TitilliumBold";}
 body{
+
   #menu{
-    position: fixed;
-    max-height: 50px;
-    margin-bottom: 0px;
-    .container-fluid{
-      height: 50px;
-    }
-    p{
-      &.image{ margin-top: 0px; }
-      &.login{ margin-right: 15px; }
-      &.cadastro{
-        margin-right: 15px;
-        a, a:hover{
-          color: #777;
-          text-decoration: none;
-        }
-      }
-      img{
-        width: 50px;
-        height: 50px;
-      }
-    }
-    ul.dropdown-menu{
-      left: initial;
-      right: 30px;
-      top: 45px;
-      input, button{
-        display: block;
-        padding: 10px;
-        margin: 5px;
-        width: 170px;
-      }
-    }
+    height: 50px;
+    img{ width: 50px; height: 50px; }
+    .navbar-brand{ margin-left: 0; padding: 0; }
   }
+  // #menu{
+  //   position: fixed;
+  //   max-height: 50px;
+  //   margin-bottom: 0px;
+  //   .container-fluid{
+  //     height: 50px;
+  //   }
+  //   p{
+  //     &.image{ margin-top: 0px; }
+  //     &.login{ margin-right: 15px; }
+  //     &.cadastro{
+  //       margin-right: 15px;
+  //       a, a:hover{
+  //         color: #777;
+  //         text-decoration: none;
+  //       }
+  //     }
+  //     img{
+  //       width: 50px;
+  //       height: 50px;
+  //     }
+  //   }
+    // ul.dropdown-menu{
+    //   left: initial;
+    //   right: 30px;
+    //   top: 45px;
+    //   input, button{
+    //     display: block;
+    //     padding: 10px;
+    //     margin: 5px;
+    //     width: 170px;
+    //   }
+    // }
+  // }
 
   .container-fluid{
     .topo{
