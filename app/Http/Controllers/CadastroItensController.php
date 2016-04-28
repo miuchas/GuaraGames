@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Controllers\CadastroItensController;
 use App\Http\Requests;
 use App\Historico;
 use App\Games;
@@ -12,9 +13,17 @@ use DB;
 
 class CadastroItensController extends Controller
 {
-
     public function cadastroGames(){
-      return view('paginas/cadastro-games');
+      if( (new GeralController)->administrador() ){ return view('paginas/cadastro-games'); }
+      else{ return view('home'); }
+    }
+
+    public function cadastroHistoricos(){
+      if( (new GeralController)->administrador() ){
+        $games = DB::table("games")->select('id', 'Nome')->get();
+        return view('paginas/cadastro-historicos',['games' => $games]);
+      }
+      else{ return view('home'); }
     }
 
     public function cadastraGame(Request $request){
@@ -30,11 +39,6 @@ class CadastroItensController extends Controller
       else{ $mensagem = "O game ".$request->nome." já existe no banco."; }
 
       return view('paginas/cadastro-games',['mensagem' => $mensagem]);
-    }
-
-    public function cadastroHistoricos(){
-      $games = DB::table("games")->select('id', 'Nome')->get();
-      return view('paginas/cadastro-historicos',['games' => $games]);
     }
 
     public function cadastraHistorico(Request $request){

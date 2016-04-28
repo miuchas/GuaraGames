@@ -1,8 +1,7 @@
 @extends('layouts.home')
 @section('conteudo_principal')
 
-<!-- @include('paginas/banner-j5') -->
-@include('paginas/cadastro-games')
+@include('paginas/banner-j5')
 
 @endsection
 

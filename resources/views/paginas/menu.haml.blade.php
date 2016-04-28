@@ -23,6 +23,14 @@
     {{ Auth::user()->name }}
     %span.caret
     %ul.dropdown-menu{"aria-labelledby" => "login_logout"}
+      @if( Auth::user()->tipousuario == 1 )
+      %li
+        %a{:href => "/cadastro-games"}
+          Cadastrar Games
+      %li
+        %a{:href => "/gerador-de-seriais"}
+          Gerar Seriais
+      @endif
       %li
         %a{:href => "/logout"}
           Sair
