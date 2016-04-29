@@ -24,7 +24,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-      $games = DB::table("games")->select('id', 'Nome')->get();
-      return view('home',['games' => $games]);
+      return view('home');
     }
 }

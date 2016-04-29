@@ -5,7 +5,7 @@
       %span.icon-bar
       %span.icon-bar
       %span.icon-bar
-    %a.navbar-brand{:href => "#"}
+    %a.navbar-brand{:href => "/"}
       %img{:src=>"images/logo-guara-games-studio.png"}
 
   .collapse.navbar-collapse#menu_principal
