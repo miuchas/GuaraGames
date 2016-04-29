@@ -1,9 +1,9 @@
 #banner-j5
   .smoke-direita
     %img{:src=>"/images/banner/Smoke_Background.png"}
-  .agramon
+  .agramon.animated.fadeInLeft
     %img{:src=>"/images/banner/Agramon.png"}
-  .diego
+  .diego.animated.fadeInRight
     %img{:src=>"/images/banner/Diego.png"}
   .smoke-esquerda
     %img{:src=>"/images/banner/Smoke_Frente_03.png"}

@@ -49,8 +49,13 @@ class CadastroItensController extends Controller
       $historico->save();
     }
 
+
+    public function resgataGame(Request $request){
+      //game
+      //serial
+    }
+
     public function compraGame(Request $request){
-      //digita key
       //cria key na hora
     }
 }

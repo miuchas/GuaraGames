@@ -1,7 +1,7 @@
 @extends('layouts.home')
 @section('conteudo_principal')
 
-@include('paginas/banner-j5')
+<!-- @include('banners/j5') -->
 
 @endsection
 

@@ -31,8 +31,12 @@
           %li
             %form{:role=>"form", :method=>"POST", :action=>"/login"}
               {!! csrf_field() !!}
-              %input{:type=>"text", :name=>"email", :placeholder=>"EMAIL"}
-              %input{:type=>"password", :name=>"password", :placeholder=>"SENHA"}
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                %input.mdl-textfield__input{:type=>"text", :id=>"email", :name=>"email"}
+                %label.mdl-textfield__label{:for=>"email"}EMAIL
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label
+                %input.mdl-textfield__input{:type=>"password", :id=>"password", :name=>"password"}
+                %label.mdl-textfield__label{:for=>"password"}SENHA
               %button.btn ENTRAR
       %li.cadastro
         %a{:href => "/register"} Cadastro
