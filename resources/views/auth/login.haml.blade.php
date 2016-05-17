@@ -1,6 +1,6 @@
 @extends('layouts.home')
 @section('conteudo_principal')
 
-@include('home')
+@include('paginas/acesso')
 
 @endsection

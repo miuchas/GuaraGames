@@ -18,7 +18,6 @@ elixir(function(mix) {
     mix.scripts([
       'jquery.min.js',
       'bootstrap.min.js',
-      'material.min.js',
     ],'public/scripts/vendor.js', bowerDir);
 
 });

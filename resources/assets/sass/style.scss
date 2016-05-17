@@ -6,9 +6,14 @@ body, html{
 body{
 
   #menu{
-    min-height: 50px;
+    // min-height: 50px;
     img{ width: 50px; height: 50px; }
     .navbar-brand{ margin-left: 0; padding: 0; }
+    #carrinho{
+      font-size: 1.2em;
+      padding: 17px;
+      margin-right: 10px;
+    }
   }
 
   .container-fluid{
@@ -18,9 +23,14 @@ body{
   }
 
   #corpo{
-    margin-top: 50px;
+    height: 100%;
+
+    .mdl-grid{
+      height:100%;
+    }
 
     #banner-j5{
+      margin-top:50px;
       background-image: url("/images/banner/BG_1280x1024.png");
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -93,7 +103,65 @@ body{
       }
     }
 
-
+    #acesso{
+      background: url("/images/textura-login2.png"),radial-gradient(ellipse at center, #CFD0C7 0%,#73736E 70%) repeat;
+      .centraliza{
+        align-self: center;
+        .box{
+          background-color: rgba(0,0,0,.6);
+          margin: 0 auto;
+          padding: 15px 0;
+          border-top: 3px solid #D33819;
+          border-radius: 10px;
+          position: relative;
+          .img{
+            text-align: center;
+            img{
+              height: 100px;
+            }
+          }
+          .custom-text-field{
+            margin: 0 auto;
+            width: 350px;
+            display: block;
+            input{
+              border-bottom: 1px solid white;
+              color: white;
+            }
+            label{
+              color: white;
+              &:after{
+                background-color: transparent;
+              }
+            }
+          }
+          .custom-buttom-position{
+            position: absolute;
+            width: 100%;
+            .custom-buttom{
+              display:block;
+              background: #D33819;
+            }
+          }
+          .links{
+            text-align: center;
+            padding: 10px 0 30px;
+            font-size: 1.2em;
+            color: white;
+            a{
+              text-decoration: none;
+              color: white;
+              &:hover{
+                color: #DCDADA;
+              }
+            }
+            .span{
+              display:inline-block;
+            }
+          }
+        }
+      }
+    }
 
   }
 }

@@ -15,7 +15,6 @@ Route::group(['middleware' => ['web']], function () {
 });
 
 Route::group(['middleware' => ['auth']], function () {
-  Route::get('/' , 'GeralController@index');
   //operações referentes ao cadastro de games
   Route::get('cadastro-games' , 'CadastroItensController@cadastroGames');
   Route::post('cadastro-games' , 'CadastroItensController@cadastraGame');
@@ -24,4 +23,5 @@ Route::group(['middleware' => ['auth']], function () {
   Route::post('gerador-de-seriais' , 'CadastroItensController@cadastraHistorico');
 
 });
+Route::get('/' , 'GeralController@index');
 Route::get('/logout', 'Auth\AuthController@logout');

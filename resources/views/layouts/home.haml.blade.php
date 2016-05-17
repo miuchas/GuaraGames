@@ -17,9 +17,14 @@
     %script{:src => "/js/bootstrap.js", :defer => "defer", :type => "text/javascript"}
     -# %script{:src => "/js/vendor.js", :defer => "defer", :type => "text/javascript"}
 
+    %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "https://code.getmdl.io/1.1.3/material.indigo-pink.min.css", :rel => "stylesheet", :type => "text/css"}
+    %script{:src => "https://code.getmdl.io/1.1.3/material.min.js", :defer => "defer", :type => "text/javascript"}
+
     %body
-      %nav.navbar.navbar-default.navbar-fixed-top#menu
+      #menu
         @include('paginas/menu')
-      .col-xs-12#corpo
-        .row
-          @yield('conteudo_principal')
+      #corpo
+        @yield('conteudo_principal')
+      #rodape
+        -# to sem ideia ainda
