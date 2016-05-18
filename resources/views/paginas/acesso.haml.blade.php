@@ -27,6 +27,8 @@
               %span{"aria-hidden"=>"true"}&times
             %form.form-horizontal{:action => "password/email", :method => "POST", :role => "form"}
               {!! csrf_field() !!}
+              %span
+                Recuperação de senha
               %input.form-control{:name => "email", :type => "email", :placeholder=>"Digite seu email" }
               %button.btn.btn-primary{:type => "submit"}
                 Recuperar senha
