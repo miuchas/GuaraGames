@@ -8289,5 +8289,14 @@ body #corpo {
               background: transparent; }
               body #corpo #acesso .centraliza .box .links .span .btn:hover {
                 background: transparent; }
+      body #corpo #acesso .centraliza .modal-dialog {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto; }
 
 /*# sourceMappingURL=app.css.map */
