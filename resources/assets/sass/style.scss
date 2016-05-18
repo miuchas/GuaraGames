@@ -146,8 +146,6 @@ body{
           .links{
             text-align: center;
             padding: 10px 0 30px;
-            font-size: 1.2em;
-            color: white;
             a{
               text-decoration: none;
               color: white;
@@ -157,6 +155,14 @@ body{
             }
             .span{
               display:inline-block;
+              .btn{
+                color: white;
+                font-size: 1.2em;
+                background: transparent;
+                &:hover{
+                  background: transparent;
+                }
+              }
             }
           }
         }

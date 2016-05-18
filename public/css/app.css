@@ -8275,9 +8275,7 @@ body #corpo {
             background: #D33819; }
         body #corpo #acesso .centraliza .box .links {
           text-align: center;
-          padding: 10px 0 30px;
-          font-size: 1.2em;
-          color: white; }
+          padding: 10px 0 30px; }
           body #corpo #acesso .centraliza .box .links a {
             text-decoration: none;
             color: white; }
@@ -8285,5 +8283,11 @@ body #corpo {
               color: #DCDADA; }
           body #corpo #acesso .centraliza .box .links .span {
             display: inline-block; }
+            body #corpo #acesso .centraliza .box .links .span .btn {
+              color: white;
+              font-size: 1.2em;
+              background: transparent; }
+              body #corpo #acesso .centraliza .box .links .span .btn:hover {
+                background: transparent; }
 
 /*# sourceMappingURL=app.css.map */

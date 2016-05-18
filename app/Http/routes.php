@@ -25,3 +25,11 @@ Route::group(['middleware' => ['auth']], function () {
 });
 Route::get('/' , 'GeralController@index');
 Route::get('/logout', 'Auth\AuthController@logout');
+
+// Rotas para solicitar trocar de senha...
+Route::get('passwords/email', 'Auth\PasswordController@getEmail');
+Route::post('passwords/email', 'Auth\PasswordController@postEmail');
+
+// Rotas para trocar a senha...
+Route::get('passwords/reset/{token}', 'Auth\PasswordController@getReset');
+Route::post('passwords/reset', 'Auth\PasswordController@postReset');
