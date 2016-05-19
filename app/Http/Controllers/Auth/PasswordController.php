@@ -25,8 +25,15 @@ class PasswordController extends Controller
      *
      * @return void
      */
+
+    //  public function __construct(Guard $auth, PasswordBroker $passwords)
+    // {
+    //     $this->middleware('guest');
+    // }
+
     public function __construct()
     {
+        $this->subject = 'GuaraGames - Requisição de troca de senha'; //  < --JUST ADD THIS LINE
         $this->middleware('guest');
     }
 }

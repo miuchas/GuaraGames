@@ -23,12 +23,13 @@
       .modal-dialog.modal-sm{:role=>"document"}
         .modal-content
           .modal-body
-            %button.close{:type=>"button", "data-dismiss"=>"modal", "aria-label"=>"Close"}
-              %span{"aria-hidden"=>"true"}&times
             %form.form-horizontal{:action => "password/email", :method => "POST", :role => "form"}
               {!! csrf_field() !!}
               %span
                 Recuperação de senha
-              %input.form-control{:name => "email", :type => "email", :placeholder=>"Digite seu email" }
-              %button.btn.btn-primary{:type => "submit"}
-                Recuperar senha
+              .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.custom-text-field
+                %input.mdl-textfield__input{:type=>"email", :id=>"email", :name=>"email"}
+                %label.mdl-textfield__label{:for=>"email"}Digite seu email
+              .custom-buttom-position.button-modal
+                %button.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.custom-buttom
+                  %i.material-icons arrow_forward

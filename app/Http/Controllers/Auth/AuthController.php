@@ -77,7 +77,7 @@ class AuthController extends Controller
             'login' => $data['login'],
             'telefone' => $data['telefone'],
             'datanascimento' => date('Y-m-d'),
-            'tipousuario' => 1,
+            'tipousuario' => 0,
         ]);
     }
 }

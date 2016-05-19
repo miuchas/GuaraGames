@@ -8241,6 +8241,26 @@ body #corpo {
         text-align: center; }
   body #corpo #acesso {
     background: url("/images/textura-login2.png"), radial-gradient(ellipse at center, #CFD0C7 0%, #73736E 70%) repeat; }
+    body #corpo #acesso .custom-text-field {
+      margin: 0 auto;
+      width: 350px;
+      display: block; }
+      body #corpo #acesso .custom-text-field input {
+        border-bottom: 1px solid white;
+        color: white; }
+      body #corpo #acesso .custom-text-field label {
+        color: white; }
+        body #corpo #acesso .custom-text-field label:after {
+          background-color: transparent; }
+    body #corpo #acesso .custom-buttom-position {
+      position: absolute;
+      width: 100%; }
+      body #corpo #acesso .custom-buttom-position.button-modal {
+        width: calc(100% - 30px);
+        bottom: -40px; }
+      body #corpo #acesso .custom-buttom-position .custom-buttom {
+        display: block;
+        background: #D33819; }
     body #corpo #acesso .centraliza {
       -webkit-align-self: center;
       -ms-flex-item-align: center;
@@ -8256,23 +8276,6 @@ body #corpo {
           text-align: center; }
           body #corpo #acesso .centraliza .box .img img {
             height: 100px; }
-        body #corpo #acesso .centraliza .box .custom-text-field {
-          margin: 0 auto;
-          width: 350px;
-          display: block; }
-          body #corpo #acesso .centraliza .box .custom-text-field input {
-            border-bottom: 1px solid white;
-            color: white; }
-          body #corpo #acesso .centraliza .box .custom-text-field label {
-            color: white; }
-            body #corpo #acesso .centraliza .box .custom-text-field label:after {
-              background-color: transparent; }
-        body #corpo #acesso .centraliza .box .custom-buttom-position {
-          position: absolute;
-          width: 100%; }
-          body #corpo #acesso .centraliza .box .custom-buttom-position .custom-buttom {
-            display: block;
-            background: #D33819; }
         body #corpo #acesso .centraliza .box .links {
           text-align: center;
           padding: 10px 0 30px; }
@@ -8298,5 +8301,13 @@ body #corpo {
         right: 0;
         margin-left: auto;
         margin-right: auto; }
+        body #corpo #acesso .centraliza .modal-dialog .modal-content {
+          color: white;
+          background-color: rgba(0, 0, 0, 0.9);
+          margin: 0 auto;
+          padding: 15px 0;
+          border-top: 3px solid #D33819;
+          border-radius: 10px;
+          position: relative; }
 
 /*# sourceMappingURL=app.css.map */

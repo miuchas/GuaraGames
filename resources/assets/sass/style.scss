@@ -105,6 +105,33 @@ body{
 
     #acesso{
       background: url("/images/textura-login2.png"),radial-gradient(ellipse at center, #CFD0C7 0%,#73736E 70%) repeat;
+      .custom-text-field{
+        margin: 0 auto;
+        width: 350px;
+        display: block;
+        input{
+          border-bottom: 1px solid white;
+          color: white;
+        }
+        label{
+          color: white;
+          &:after{
+            background-color: transparent;
+          }
+        }
+      }
+      .custom-buttom-position{
+        &.button-modal{
+          width: calc(100% - 30px);
+          bottom: -40px;
+        }
+        position: absolute;
+        width: 100%;
+        .custom-buttom{
+          display:block;
+          background: #D33819;
+        }
+      }
       .centraliza{
         align-self: center;
         .box{
@@ -118,29 +145,6 @@ body{
             text-align: center;
             img{
               height: 100px;
-            }
-          }
-          .custom-text-field{
-            margin: 0 auto;
-            width: 350px;
-            display: block;
-            input{
-              border-bottom: 1px solid white;
-              color: white;
-            }
-            label{
-              color: white;
-              &:after{
-                background-color: transparent;
-              }
-            }
-          }
-          .custom-buttom-position{
-            position: absolute;
-            width: 100%;
-            .custom-buttom{
-              display:block;
-              background: #D33819;
             }
           }
           .links{
@@ -175,6 +179,15 @@ body{
           right: 0;
           margin-left: auto;
           margin-right: auto;
+          .modal-content{
+            color:white;
+            background-color: rgba(0, 0, 0, 0.9);
+            margin: 0 auto;
+            padding: 15px 0;
+            border-top: 3px solid #D33819;
+            border-radius: 10px;
+            position:relative;
+          }
         }
       }
     }
