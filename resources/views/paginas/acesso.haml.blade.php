@@ -23,7 +23,7 @@
       .modal-dialog.modal-sm{:role=>"document"}
         .modal-content
           .modal-body
-            %form.form-horizontal{:action => "password/email", :method => "POST", :role => "form"}
+            %form.form-horizontal{:action => "/password/email", :method => "POST", :role => "form"}
               {!! csrf_field() !!}
               %span
                 Recuperação de senha

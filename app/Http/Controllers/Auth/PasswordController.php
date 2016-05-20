@@ -33,7 +33,7 @@ class PasswordController extends Controller
 
     public function __construct()
     {
-        $this->subject = 'GuaraGames - Requisição de troca de senha'; //  < --JUST ADD THIS LINE
+        $this->subject = 'GuaraGames - Requisição de troca de senha';
         $this->middleware('guest');
     }
 }

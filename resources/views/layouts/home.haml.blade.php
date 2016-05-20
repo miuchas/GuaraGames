@@ -9,12 +9,12 @@
     %meta{"http-equiv" => "X-UA-Compatible", "content" => "IE=edge"}
 
     //custom css
-    %link{:href => "/css/app.css", :rel => "stylesheet", :type => "text/css"}
-    %link{:href => "/fonts/font-awesome/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "css/app.css", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "fonts/font-awesome/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}
 
     //custom js
-    %script{:src => "/js/jquery.min.js", :defer => "defer", :type => "text/javascript"}
-    %script{:src => "/js/bootstrap.js", :defer => "defer", :type => "text/javascript"}
+    %script{:src => "js/jquery.min.js", :defer => "defer", :type => "text/javascript"}
+    %script{:src => "js/bootstrap.js", :defer => "defer", :type => "text/javascript"}
     -# %script{:src => "/js/vendor.js", :defer => "defer", :type => "text/javascript"}
 
     %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet", :type => "text/css"}
