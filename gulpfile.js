@@ -18,6 +18,10 @@ elixir(function(mix) {
     mix.scripts([
       'jquery.min.js',
       'bootstrap.min.js',
-    ],'public/scripts/vendor.js', bowerDir);
+    ],'public/scripts/libs.js', bowerDir);
+
+    mix.scripts([
+      'login.js',
+    ],'public/scripts/custom.js', bowerDir);
 
 });

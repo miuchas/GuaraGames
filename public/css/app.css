@@ -8271,7 +8271,8 @@ body #corpo {
         padding: 15px 0;
         border-top: 3px solid #D33819;
         border-radius: 10px;
-        position: relative; }
+        position: relative;
+        max-width: 430px; }
         body #corpo #acesso .centraliza .box .img {
           text-align: center; }
           body #corpo #acesso .centraliza .box .img img {
@@ -8302,6 +8303,7 @@ body #corpo {
         margin-left: auto;
         margin-right: auto; }
         body #corpo #acesso .centraliza .modal-dialog .modal-content {
+          min-height: 195;
           color: white;
           background-color: rgba(0, 0, 0, 0.9);
           margin: 0 auto;
@@ -8309,5 +8311,9 @@ body #corpo {
           border-top: 3px solid #D33819;
           border-radius: 10px;
           position: relative; }
+          body #corpo #acesso .centraliza .modal-dialog .modal-content .modal-body {
+            height: 161px; }
+          body #corpo #acesso .centraliza .modal-dialog .modal-content #load {
+            text-align: center; }
 
 /*# sourceMappingURL=app.css.map */

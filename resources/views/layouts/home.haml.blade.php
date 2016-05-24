@@ -13,9 +13,8 @@
     %link{:href => "fonts/font-awesome/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}
 
     //custom js
-    %script{:src => "js/jquery.min.js", :defer => "defer", :type => "text/javascript"}
-    %script{:src => "js/bootstrap.js", :defer => "defer", :type => "text/javascript"}
-    -# %script{:src => "/js/vendor.js", :defer => "defer", :type => "text/javascript"}
+    %script{:src => "scripts/libs.js", :defer => "defer", :type => "text/javascript"}
+    %script{:src => "scripts/custom.js", :defer => "defer", :type => "text/javascript"}
 
     %link{:href => "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet", :type => "text/css"}
     %link{:href => "https://code.getmdl.io/1.1.3/material.indigo-pink.min.css", :rel => "stylesheet", :type => "text/css"}

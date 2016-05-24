@@ -23,13 +23,17 @@
       .modal-dialog.modal-sm{:role=>"document"}
         .modal-content
           .modal-body
-            %form.form-horizontal{:action => "/password/email", :method => "POST", :role => "form"}
+            %form.form-horizontal#troca-senha
               {!! csrf_field() !!}
               %span
                 Recuperação de senha
               .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.custom-text-field
-                %input.mdl-textfield__input{:type=>"email", :id=>"email", :name=>"email"}
+                %input.mdl-textfield__input{:type=>"email", :id=>"reset-email", :name=>"email"}
                 %label.mdl-textfield__label{:for=>"email"}Digite seu email
+              #load.hide
+                .mdl-spinner.mdl-js-spinner.is-active
+              #mensagem.hide
+
               .custom-buttom-position.button-modal
-                %button.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.custom-buttom
+                %button.mdl-button.mdl-js-button.mdl-button--fab.mdl-js-ripple-effect.mdl-button--colored.custom-buttom#send_button
                   %i.material-icons arrow_forward
