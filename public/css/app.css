@@ -8176,7 +8176,8 @@ body .container-fluid .topo {
   margin-top: -20px; }
 
 body #corpo {
-  height: 100%; }
+  height: 100%;
+  padding-top: 50px; }
   body #corpo .mdl-grid {
     height: 100%; }
   body #corpo #banner-j5 {

@@ -18,9 +18,13 @@
           %ul.dropdown-menu
             -foreach ($games as $game)
               %li
-                %a{href:"#"}= $game->Nome
+                %a{href: strtolower(preg_replace('/( )+/', '', $game->Nome)) }= $game->Nome
         %li.contato
           %a{href:"#contato"} Contato
+        %li.contato
+          %a{href:"#noticias"} Noticias
+        %li.contato
+          %a{href:"#empresa"} Empresa
 
       %ul.nav.navbar-nav.navbar-right
         @if (Auth::guest())
