@@ -25,5 +25,7 @@
         @include('paginas/menu')
       #corpo
         @yield('conteudo_principal')
+      #loading
+        @include('paginas/load')
       #rodape
         -# to sem ideia ainda
