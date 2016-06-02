@@ -17,8 +17,6 @@ class AppServiceProvider extends ServiceProvider
       $this->publishes([
       'vendor/bootstrap/dist' => public_path('vendor/bootstrap'),
       ], 'public');
-      $games = DB::table("games")->select('id', 'Nome')->get();
-      view()->share('games', $games);
     }
 
     /**
