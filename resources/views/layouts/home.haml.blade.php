@@ -26,6 +26,6 @@
       #corpo
         @yield('conteudo_principal')
       #loading
-        @include('paginas/load')
+        @include('paginas/cube_load')
       #rodape
         -# to sem ideia ainda
