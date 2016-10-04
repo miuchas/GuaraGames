@@ -8,7 +8,13 @@ section#equipe{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    .altura-geral{ height: 33.33%; }
+    .altura{
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
     .titulo{
       text-align: center;
       color: white;
@@ -18,64 +24,38 @@ section#equipe{
       left: 50px;
     }
     .ph, .wads, .lg{
-      display: block;
+      display: inline-block;
       position: relative;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       span{
-        display: block;
+        text-align: left;
         color:white;
-        width: 100px;
         position: absolute;
-        &.nome{ bottom: 30px; }
-        &.cargo{ bottom: 10px; }
+        &.nome{ display:block; bottom: 30px; }
+        &.cargo{ display:block; bottom: 10px; }
       }
     }
     .ph{
-      text-align: right;
-      span{
-        right: 160px;
-        text-align: left;
-      }
+
     }
     .wads{
-      text-align: center;
+      top: 0;
       span{
-        right: -275px;
-        margin: 0 auto;
-        &.nome{ bottom: -15px; }
-        &.cargo{ bottom: -34px; }
+        &.nome{ margin: initial; top: 0; right: 0; }
+        &.cargo{ margin: initial; top: 20px; right: 0; }
       }
     }
     .lg{
-      text-align: left;
-      span{
-        left: 160px;
-        text-align: right;
-      }
+      span{ right: 0; }
     }
   }
   /* CSS screen SM (768px - 991px) */
   @media screen and (min-width: $screen-sm){
     .fundo{
-      .altura-geral{ height: 100%; }
-      .titulo{
-        position: relative;
-        left: 50%;
-        height: 0px;
-        top: 33%;
-        transform: translate(-50%, -50%);
-      }
       .wads{
-        padding-top: 100px;
-        text-align: center;
+        top: 60px;
         span{
-          right: 0px;
-          left: 0px;
-          margin: 0 auto;
-          &.nome{ bottom: -15px; }
-          &.cargo{ bottom: -34px; }
+          &.nome{ bottom: -15px; margin: 0px 76px; top: initial;}
+          &.cargo{ bottom: -34px; margin: 0px 85px; top: initial;}
         }
       }
     }
@@ -89,65 +69,3 @@ section#equipe{
 
   }
 }
-
-
-//backup faixa
-// section#equipe{
-//   background-image: url("/images/equipe/PatternLoop.jpg");
-//   // height:500px;
-//   height:calc(100%);
-//   .fundo{
-//     background-image: url("/images/equipe/PatternRadial.png");
-//     // height: 500px;
-//     height:calc(100%);
-//     background-repeat: no-repeat;
-//     background-attachment: fixed;
-//     background-position: center;
-//     background-size: cover;
-//     .ph, .wads, .lg{
-//       margin-top: 100px;
-//       display: block;
-//       position: relative;
-//       span{
-//         display: block;
-//         color:white;
-//         width: 100px;
-//         position: absolute;
-//         &.nome{ bottom: 30px; }
-//         &.cargo{ bottom: 10px; }
-//       }
-//     }
-//     .titulo{
-//       text-align: center;
-//       color: white;
-//       position: relative;
-//       top: 120px;
-//       font-size: 1.3em;
-//     }
-//     .ph{
-//       text-align: right;
-//       span{
-//         right: 160px;
-//         text-align: left;
-//       }
-//     }
-//     .wads{
-//       margin-top: 180px;
-//       text-align: center;
-//       span{
-//         right: 0px;
-//         left: 0px;
-//         margin: 0 auto;
-//         &.nome{ bottom: -15px; }
-//         &.cargo{ bottom: -34px; }
-//       }
-//     }
-//     .lg{
-//       text-align: left;
-//       span{
-//         left: 160px;
-//         text-align: right;
-//       }
-//     }
-//   }
-// }

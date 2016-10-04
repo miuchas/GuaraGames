@@ -8414,8 +8414,13 @@ section#equipe {
     background-attachment: fixed;
     background-position: center;
     background-size: cover; }
-    section#equipe .fundo .altura-geral {
-      height: 33.33%; }
+    section#equipe .fundo .altura {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center; }
     section#equipe .fundo .titulo {
       text-align: center;
       color: white;
@@ -8424,60 +8429,40 @@ section#equipe {
       top: 80px;
       left: 50px; }
     section#equipe .fundo .ph, section#equipe .fundo .wads, section#equipe .fundo .lg {
-      display: block;
-      position: relative;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      display: inline-block;
+      position: relative; }
       section#equipe .fundo .ph span, section#equipe .fundo .wads span, section#equipe .fundo .lg span {
-        display: block;
+        text-align: left;
         color: white;
-        width: 100px;
         position: absolute; }
         section#equipe .fundo .ph span.nome, section#equipe .fundo .wads span.nome, section#equipe .fundo .lg span.nome {
+          display: block;
           bottom: 30px; }
         section#equipe .fundo .ph span.cargo, section#equipe .fundo .wads span.cargo, section#equipe .fundo .lg span.cargo {
+          display: block;
           bottom: 10px; }
-    section#equipe .fundo .ph {
-      text-align: right; }
-      section#equipe .fundo .ph span {
-        right: 160px;
-        text-align: left; }
     section#equipe .fundo .wads {
-      text-align: center; }
-      section#equipe .fundo .wads span {
-        right: -275px;
-        margin: 0 auto; }
-        section#equipe .fundo .wads span.nome {
-          bottom: -15px; }
-        section#equipe .fundo .wads span.cargo {
-          bottom: -34px; }
-    section#equipe .fundo .lg {
-      text-align: left; }
-      section#equipe .fundo .lg span {
-        left: 160px;
-        text-align: right; }
+      top: 0; }
+      section#equipe .fundo .wads span.nome {
+        margin: initial;
+        top: 0;
+        right: 0; }
+      section#equipe .fundo .wads span.cargo {
+        margin: initial;
+        top: 20px;
+        right: 0; }
+    section#equipe .fundo .lg span {
+      right: 0; }
   @media screen and (min-width: 768px) {
-    section#equipe .fundo .altura-geral {
-      height: 100%; }
-    section#equipe .fundo .titulo {
-      position: relative;
-      left: 50%;
-      height: 0px;
-      top: 33%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
     section#equipe .fundo .wads {
-      padding-top: 100px;
-      text-align: center; }
-      section#equipe .fundo .wads span {
-        right: 0px;
-        left: 0px;
-        margin: 0 auto; }
-        section#equipe .fundo .wads span.nome {
-          bottom: -15px; }
-        section#equipe .fundo .wads span.cargo {
-          bottom: -34px; } }
+      top: 60px; }
+      section#equipe .fundo .wads span.nome {
+        bottom: -15px;
+        margin: 0px 76px;
+        top: initial; }
+      section#equipe .fundo .wads span.cargo {
+        bottom: -34px;
+        margin: 0px 85px;
+        top: initial; } }
 
 /*# sourceMappingURL=app.css.map */
