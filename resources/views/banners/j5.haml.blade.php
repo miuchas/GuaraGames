@@ -1,4 +1,4 @@
-#banner-j5
+%section#banner-j5
   .smoke-direita
     %img{:src=>"images/banner/Smoke_Background.png"}
   .agramon.animated.fadeInLeft
@@ -15,5 +15,3 @@
       %img{:src=>"images/banner/Logo_Back.png"}
     .logo-j5
       %img{:src=>"images/banner/Logo.png"}
-    -# .logo-detail
-    -#   %img{:src=>"/images/banner/Logo_Back1.png"}

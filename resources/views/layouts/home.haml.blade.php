@@ -23,9 +23,10 @@
     %body
       #menu
         @include('paginas/menu')
-      #corpo
+        @include('paginas/midias-sociais')
+      #corpo.main
         @yield('conteudo_principal')
       #loading
-        @include('paginas/cube_load')
+        -# @include('paginas/cube_load')
       #rodape
         -# to sem ideia ainda

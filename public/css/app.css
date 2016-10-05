@@ -8180,50 +8180,6 @@ body #corpo {
   padding-top: 50px; }
   body #corpo .mdl-grid {
     height: 100%; }
-  body #corpo #banner-j5 {
-    background-image: url("/images/banner/BG_1280x1024.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center top;
-    background-size: cover;
-    height: 500px;
-    max-height: 500px;
-    overflow: hidden;
-    position: relative; }
-    body #corpo #banner-j5 .agramon, body #corpo #banner-j5 .smoke-esquerda, body #corpo #banner-j5 .diego, body #corpo #banner-j5 .smoke-direita, body #corpo #banner-j5 .logo, body #corpo #banner-j5 .smoke-frente {
-      position: absolute;
-      bottom: 0px; }
-      body #corpo #banner-j5 .agramon img, body #corpo #banner-j5 .smoke-esquerda img, body #corpo #banner-j5 .diego img, body #corpo #banner-j5 .smoke-direita img, body #corpo #banner-j5 .logo img, body #corpo #banner-j5 .smoke-frente img {
-        height: 500px; }
-    body #corpo #banner-j5 .agramon, body #corpo #banner-j5 .smoke-esquerda {
-      left: 0px; }
-    body #corpo #banner-j5 .diego, body #corpo #banner-j5 .smoke-direita {
-      right: 0px; }
-    body #corpo #banner-j5 .smoke-frente {
-      width: 100%; }
-      body #corpo #banner-j5 .smoke-frente img {
-        width: 100%;
-        height: 300px; }
-    body #corpo #banner-j5 .agramon {
-      top: 0px; }
-      body #corpo #banner-j5 .agramon img {
-        height: 500px; }
-    body #corpo #banner-j5 .diego {
-      top: 0px; }
-      body #corpo #banner-j5 .diego img {
-        height: 500px; }
-    body #corpo #banner-j5 .logo {
-      left: calc(50% - 100px); }
-      body #corpo #banner-j5 .logo .logo-j5 {
-        position: absolute;
-        left: 38px;
-        top: 38px; }
-        body #corpo #banner-j5 .logo .logo-j5 img {
-          height: 135px; }
-      body #corpo #banner-j5 .logo .logo-Background img {
-        height: 200px; }
-      body #corpo #banner-j5 .logo .logo-detail img {
-        height: 70px; }
   body #corpo #registro, body #corpo #cadastro-games {
     margin-top: 50px;
     color: #777; }
@@ -8401,6 +8357,155 @@ body #corpo {
     -webkit-transform: scale(1.2, 1);
     transform: scale(1.2, 1); } }
 
+body, html {
+  margin: 0;
+  overflow: hidden;
+  transition: opacity 400ms; }
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d; }
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%; }
+
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.onepage-pagination li {
+  padding: 0;
+  text-align: center; }
+
+.onepage-pagination li a {
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block; }
+
+.onepage-pagination li a:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
+
+.onepage-pagination li a.active:before {
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid black;
+  margin-top: -4px;
+  left: 8px; }
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto; }
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important; }
+
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%; }
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none; }
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit; }
+
+section#banner-j5 {
+  background-image: url("/images/banner/BG_1280x1024.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  /* CSS screen SM (768px - 991px) */
+  /* CSS screen MD (992px - 1199px) */
+  /* CSS screen LG ( >1200px) */ }
+  section#banner-j5 .agramon, section#banner-j5 .smoke-esquerda, section#banner-j5 .diego, section#banner-j5 .smoke-direita, section#banner-j5 .logo, section#banner-j5 .smoke-frente {
+    position: absolute;
+    bottom: 0px; }
+    section#banner-j5 .agramon img, section#banner-j5 .smoke-esquerda img, section#banner-j5 .diego img, section#banner-j5 .smoke-direita img, section#banner-j5 .logo img, section#banner-j5 .smoke-frente img {
+      height: 100%; }
+  section#banner-j5 .agramon, section#banner-j5 .smoke-esquerda {
+    left: 0px; }
+  section#banner-j5 .diego, section#banner-j5 .smoke-direita {
+    right: 0px; }
+  section#banner-j5 .smoke-frente {
+    width: 100%; }
+    section#banner-j5 .smoke-frente img {
+      width: 100%;
+      height: 300px; }
+  section#banner-j5 .agramon {
+    bottom: 0px; }
+    section#banner-j5 .agramon img {
+      height: 90%; }
+  section#banner-j5 .diego {
+    bottom: 0px; }
+    section#banner-j5 .diego img {
+      height: 85%;
+      right: -50px; }
+  section#banner-j5 .logo {
+    left: calc(50% - 100px); }
+    section#banner-j5 .logo .logo-j5 {
+      position: absolute;
+      left: 38px;
+      top: 38px; }
+      section#banner-j5 .logo .logo-j5 img {
+        height: 137px; }
+    section#banner-j5 .logo .logo-Background img {
+      height: 190px; }
+    section#banner-j5 .logo .logo-detail img {
+      height: 70px; }
+  @media screen and (min-width: 768px) {
+    section#banner-j5 .agramon {
+      bottom: 0px; }
+      section#banner-j5 .agramon img {
+        height: 100%; }
+    section#banner-j5 .diego {
+      bottom: 0px; }
+      section#banner-j5 .diego img {
+        height: 100%;
+        right: initial; }
+    section#banner-j5 .logo {
+      left: calc(50% - 100px); }
+      section#banner-j5 .logo .logo-j5 {
+        position: absolute;
+        left: 38px;
+        top: 38px; }
+        section#banner-j5 .logo .logo-j5 img {
+          height: 212px; }
+      section#banner-j5 .logo .logo-Background img {
+        height: 275px; } }
+
 section#equipe {
   background-image: url("/images/equipe/PatternLoop.jpg");
   height: calc(100%);
@@ -8411,7 +8516,6 @@ section#equipe {
     background-image: url("/images/equipe/PatternRadial.png");
     height: calc(100%);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover; }
     section#equipe .fundo .altura {
@@ -8422,12 +8526,12 @@ section#equipe {
       transform: translate(-50%, -50%);
       text-align: center; }
     section#equipe .fundo .titulo {
-      text-align: center;
       color: white;
-      font-size: 1.3em;
+      font-size: 1.5em;
       position: absolute;
-      top: 80px;
-      left: 50px; }
+      top: 60px;
+      left: 23px;
+      right: initial; }
     section#equipe .fundo .ph, section#equipe .fundo .wads, section#equipe .fundo .lg {
       display: inline-block;
       position: relative; }
@@ -8454,6 +8558,10 @@ section#equipe {
     section#equipe .fundo .lg span {
       right: 0; }
   @media screen and (min-width: 768px) {
+    section#equipe .fundo .titulo {
+      top: -50px;
+      left: 0;
+      right: 0; }
     section#equipe .fundo .wads {
       top: 60px; }
       section#equipe .fundo .wads span.nome {
@@ -8464,5 +8572,183 @@ section#equipe {
         bottom: -34px;
         margin: 0px 85px;
         top: initial; } }
+
+section#contato {
+  font-family: "TitilliumBold" !important;
+  color: #fff;
+  background: #000;
+  font-size: 1.2rem;
+  background-image: url("/images/bg-contato.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*-------------Form-------------*/
+  /*-------------King Joffrey dies at his wedding-------------*/
+  /*-------------Trigger Button-------------*/ }
+  section#contato h1 {
+    text-align: center; }
+  section#contato *:focus {
+    outline: none; }
+  section#contato .overlay {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: #105268;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    width: 0;
+    max-width: 500px;
+    height: 0;
+    max-height: 350px;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: .3em .3em .4em #000; }
+  section#contato .overlay.open {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    transition: opacity .4s  .2s ease-out;
+    opacity: 1; }
+  section#contato .close-button {
+    display: inline-block;
+    float: right;
+    width: 2em;
+    height: 2em;
+    border: 0.1em solid tomato;
+    font-size: .8em;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transform: rotate(225deg);
+    transform: rotate(225deg); }
+  section#contato .close-button:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: tomato;
+    width: 80%;
+    height: 6%;
+    left: 10%;
+    top: 47%; }
+  section#contato .close-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: tomato;
+    width: 6%;
+    height: 80%;
+    left: 47%;
+    top: 10%; }
+  section#contato .close-button:hover {
+    cursor: pointer;
+    background-color: tomato; }
+  section#contato .close-button:hover:before, section#contato .close-button:hover:after {
+    background-color: #fff; }
+  section#contato input, section#contato textarea {
+    border: 2px solid #2c3e50;
+    font-size: 0.8em;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    margin-bottom: 8px;
+    width: 100%;
+    max-width: 100%; }
+  section#contato input {
+    width: 65%; }
+  section#contato input:focus, section#contato input:active, section#contato textarea:focus, section#contato textarea:active {
+    background-color: #2c3e50;
+    color: #ecf0f1; }
+  section#contato input:invalid {
+    border-color: #b31800; }
+  section#contato .btn-send {
+    color: tomato;
+    background: #ecf0f1;
+    border: 3px solid tomato;
+    transition: all 0.3s;
+    position: relative;
+    float: right; }
+  section#contato .btn-send:hover, section#contato .btn-send:active {
+    color: #fff;
+    background: tomato; }
+  section#contato .circle {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    width: 200px;
+    background: #FF7054;
+    border: 4px solid #FF7054;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    transition: border-radius 0.3s cubic-bezier(0.3, -0.26, 0.4, 1.3), height 0.3s cubic-bezier(0.3, -0.26, 0.4, 1.3), width 0.3s cubic-bezier(0.3, -0.26, 0.4, 1.3); }
+  section#contato .circle:hover {
+    background: #D93D21;
+    border-color: #D93D21; }
+  section#contato .circle.open {
+    border-radius: 0;
+    height: 100%;
+    width: 100%; }
+  section#contato .circle.open:hover {
+    background-color: #FF7054;
+    border-color: #FF7054; }
+  section#contato .envelope {
+    height: 0;
+    width: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom: 40px solid white;
+    border-left: 60px solid white;
+    border-right: 60px solid white;
+    border-top: 40px solid transparent;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute; }
+  section#contato .envelope-top {
+    height: 0;
+    width: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 40px solid white;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 55px;
+    position: absolute; }
+  section#contato .circle:hover .envelope-top {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    top: -75px;
+    transition: top 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    transition: top 0.4s ease-in-out, transform 0.4s ease-in-out; }
+
+#midias-sociais {
+  z-index: 1;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  color: white;
+  font-size: 1.3em; }
+  #midias-sociais .titulo {
+    margin: 10px; }
+  #midias-sociais .midias .facebook, #midias-sociais .midias .google-plus, #midias-sociais .midias .twiter, #midias-sociais .midias .youtube {
+    display: inline-block;
+    width: 50px; }
+    #midias-sociais .midias .facebook img, #midias-sociais .midias .google-plus img, #midias-sociais .midias .twiter img, #midias-sociais .midias .youtube img {
+      width: 50px; }
 
 /*# sourceMappingURL=app.css.map */

@@ -19,3 +19,5 @@ $( "#troca-senha" ).submit(function( event ) {
     $("#mensagem").removeClass("hide").append("Mensagem enviada com sucesso!");
   })
 });
+
+$(".main").onepage_scroll();

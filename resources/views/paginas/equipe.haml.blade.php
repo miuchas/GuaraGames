@@ -1,8 +1,8 @@
 %section#equipe
   .fundo
-    .titulo
-      Equipe
     .altura
+      .titulo
+        Equipe
       .ph
         %img{ :src => "images/equipe/Ph.png" }
         %span.nome Phelipe Diniz

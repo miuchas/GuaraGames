@@ -5,7 +5,6 @@ section#equipe{
     background-image: url("/images/equipe/PatternRadial.png");
     height:calc(100%);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     .altura{
@@ -16,12 +15,12 @@ section#equipe{
       text-align: center;
     }
     .titulo{
-      text-align: center;
       color: white;
-      font-size: 1.3em;
+      font-size: 1.5em;
       position: absolute;
-      top: 80px;
-      left: 50px;
+      top: 60px;
+      left: 23px;
+      right: initial;
     }
     .ph, .wads, .lg{
       display: inline-block;
@@ -51,6 +50,11 @@ section#equipe{
   /* CSS screen SM (768px - 991px) */
   @media screen and (min-width: $screen-sm){
     .fundo{
+      .titulo{
+        top: -50px;
+        left: 0;
+        right: 0;
+      }
       .wads{
         top: 60px;
         span{

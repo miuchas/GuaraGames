@@ -1,0 +1,19 @@
+#midias-sociais{
+  z-index: 1;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+  .titulo{
+    margin: 10px;
+  }
+  .midias{
+    .facebook, .google-plus,.twiter, .youtube{
+      display: inline-block;
+      width: 50px;
+      img{ width: 50px; }
+    }
+  }
+}

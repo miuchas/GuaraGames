@@ -4,7 +4,6 @@ body, html{
   font-family: "TitilliumBold" !important;
 }
 body{
-
   #menu{
     // min-height: 50px;
     img{ width: 50px; height: 50px; }
@@ -28,57 +27,6 @@ body{
 
     .mdl-grid{
       height:100%;
-    }
-
-    #banner-j5{
-      background-image: url("/images/banner/BG_1280x1024.png");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center top;
-      background-size: cover;
-      height: 500px;
-      max-height: 500px;
-      overflow: hidden;
-      position: relative;
-
-      .agramon, .smoke-esquerda, .diego, .smoke-direita, .logo, .smoke-frente{
-        position: absolute;
-        bottom: 0px;
-        img{ height: 500px; }
-      }
-      .agramon,.smoke-esquerda{
-        left: 0px;
-      }
-      .diego, .smoke-direita{
-        right: 0px;
-      }
-      .smoke-frente{
-        width: 100%;
-        img{width: 100%; height: 300px;}
-      }
-      .agramon{
-         top:0px;
-         img{ height: 500px; }
-       }
-       .diego{
-         top:0px;
-         img{ height: 500px; }
-       }
-      .logo{
-        left: calc(50% - 100px);
-        .logo-j5{
-          position: absolute;
-          left: 38px;
-          top: 38px;
-          img{ height: 135px; }
-        }
-        .logo-Background{
-          img{ height: 200px; }
-        }
-        .logo-detail{
-          img{ height: 70px; }
-        }
-      }
     }
 
     #registro, #cadastro-games{
