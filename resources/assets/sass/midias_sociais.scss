@@ -1,4 +1,11 @@
 #midias-sociais{
+  &.mobile{
+    position: absolute;
+    display: initial;
+    right: 0;
+    left: 0;
+  }
+  display: none;
   z-index: 1;
   position: fixed;
   bottom: 30px;
@@ -15,5 +22,22 @@
       width: 50px;
       img{ width: 50px; }
     }
+  }
+
+  /* CSS screen SM (768px - 991px) */
+  @media screen and (min-width: $screen-sm){
+    display: initial;
+    &.mobile{
+      display: none;
+    }
+  }
+
+  /* CSS screen MD (992px - 1199px) */
+  @media screen and (min-width: $screen-md){
+
+  }
+  /* CSS screen LG ( >1200px) */
+  @media screen and (min-width: $screen-lg){
+
   }
 }

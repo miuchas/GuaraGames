@@ -23,6 +23,7 @@
     %body
       #menu
         @include('paginas/menu')
+      #midias-sociais
         @include('paginas/midias-sociais')
       #corpo.main
         @yield('conteudo_principal')

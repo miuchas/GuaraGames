@@ -8524,7 +8524,8 @@ section#equipe {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      text-align: center; }
+      text-align: center;
+      padding-top: 83px; }
     section#equipe .fundo .titulo {
       color: white;
       font-size: 1.5em;
@@ -8535,6 +8536,8 @@ section#equipe {
     section#equipe .fundo .ph, section#equipe .fundo .wads, section#equipe .fundo .lg {
       display: inline-block;
       position: relative; }
+      section#equipe .fundo .ph img, section#equipe .fundo .wads img, section#equipe .fundo .lg img {
+        width: 200px; }
       section#equipe .fundo .ph span, section#equipe .fundo .wads span, section#equipe .fundo .lg span {
         text-align: left;
         color: white;
@@ -8545,19 +8548,37 @@ section#equipe {
         section#equipe .fundo .ph span.cargo, section#equipe .fundo .wads span.cargo, section#equipe .fundo .lg span.cargo {
           display: block;
           bottom: 10px; }
+    section#equipe .fundo .ph span.nome, section#equipe .fundo .ph span.cargo {
+      left: -10px; }
     section#equipe .fundo .wads {
       top: 0; }
       section#equipe .fundo .wads span.nome {
         margin: initial;
         top: 0;
-        right: 0; }
+        right: -10px; }
       section#equipe .fundo .wads span.cargo {
         margin: initial;
         top: 20px;
-        right: 0; }
+        right: -10px; }
     section#equipe .fundo .lg span {
-      right: 0; }
+      right: -10px; }
   @media screen and (min-width: 768px) {
+    section#equipe .fundo .altura {
+      padding-top: 0; }
+    section#equipe .fundo .ph img, section#equipe .fundo .wads img, section#equipe .fundo .lg img {
+      width: initial; }
+    section#equipe .fundo .ph span {
+      left: initial; }
+    section#equipe .fundo .lg span {
+      right: initial; }
+    section#equipe .fundo .wads span.nome {
+      margin: initial;
+      top: 0;
+      right: 0; }
+    section#equipe .fundo .wads span.cargo {
+      margin: initial;
+      top: 20px;
+      right: 0; }
     section#equipe .fundo .titulo {
       top: -50px;
       left: 0;
@@ -8586,7 +8607,8 @@ section#contato {
   /*-------------King Joffrey dies at his wedding-------------*/
   /*-------------Trigger Button-------------*/ }
   section#contato h1 {
-    text-align: center; }
+    text-align: center;
+    font-size: 1.9em; }
   section#contato *:focus {
     outline: none; }
   section#contato .overlay {
@@ -8601,13 +8623,17 @@ section#contato {
     visibility: hidden;
     z-index: 100;
     width: 0;
-    max-width: 500px;
+    max-width: 310px;
+    max-height: 375px;
     height: 0;
-    max-height: 350px;
     background: #ecf0f1;
     padding: 20px;
     border-radius: 6px;
     box-shadow: .3em .3em .4em #000; }
+    @media screen and (min-width: 768px) {
+      section#contato .overlay {
+        max-width: 500px;
+        max-height: 350px; } }
   section#contato .overlay.open {
     width: 100%;
     height: 100%;
@@ -8736,13 +8762,22 @@ section#contato {
     transition: top 0.4s ease-in-out, transform 0.4s ease-in-out; }
 
 #midias-sociais {
+  display: none;
   z-index: 1;
   position: fixed;
   bottom: 30px;
   right: 30px;
   text-align: center;
   color: white;
-  font-size: 1.3em; }
+  font-size: 1.3em;
+  /* CSS screen SM (768px - 991px) */
+  /* CSS screen MD (992px - 1199px) */
+  /* CSS screen LG ( >1200px) */ }
+  #midias-sociais.mobile {
+    position: absolute;
+    display: initial;
+    right: 0;
+    left: 0; }
   #midias-sociais .titulo {
     margin: 10px; }
   #midias-sociais .midias .facebook, #midias-sociais .midias .google-plus, #midias-sociais .midias .twiter, #midias-sociais .midias .youtube {
@@ -8750,5 +8785,10 @@ section#contato {
     width: 50px; }
     #midias-sociais .midias .facebook img, #midias-sociais .midias .google-plus img, #midias-sociais .midias .twiter img, #midias-sociais .midias .youtube img {
       width: 50px; }
+  @media screen and (min-width: 768px) {
+    #midias-sociais {
+      display: initial; }
+      #midias-sociais.mobile {
+        display: none; } }
 
 /*# sourceMappingURL=app.css.map */

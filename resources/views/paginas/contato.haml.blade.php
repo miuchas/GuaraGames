@@ -17,3 +17,5 @@
     .circle
       .envelope-top
       .envelope
+  #midias-sociais.mobile
+    @include('paginas/midias-sociais')
