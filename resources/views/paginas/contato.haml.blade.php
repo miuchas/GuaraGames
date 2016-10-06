@@ -12,7 +12,7 @@
         %input{:type =>"email", :name => "", :id => "email"}
         %textarea{:name => "", :id => "msg", :cols => "20", :rows => "3"}
         %button#send.btn-send Enviar
-  %a{:href => "#"}
+  %a
     .circle
       .envelope-top
       .envelope

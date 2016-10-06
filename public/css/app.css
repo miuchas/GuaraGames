@@ -8357,87 +8357,6 @@ body #corpo {
     -webkit-transform: scale(1.2, 1);
     transform: scale(1.2, 1); } }
 
-body, html {
-  margin: 0;
-  overflow: hidden;
-  transition: opacity 400ms; }
-
-body, .onepage-wrapper, html {
-  display: block;
-  position: static;
-  padding: 0;
-  width: 100%;
-  height: 100%; }
-
-.onepage-wrapper {
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: relative;
-  padding: 0;
-  -webkit-transform-style: preserve-3d; }
-
-.onepage-wrapper .section {
-  width: 100%;
-  height: 100%; }
-
-.onepage-pagination {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  z-index: 5;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.onepage-pagination li {
-  padding: 0;
-  text-align: center; }
-
-.onepage-pagination li a {
-  padding: 10px;
-  width: 4px;
-  height: 4px;
-  display: block; }
-
-.onepage-pagination li a:before {
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(0, 0, 0, 0.85);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px; }
-
-.onepage-pagination li a.active:before {
-  width: 10px;
-  height: 10px;
-  background: none;
-  border: 1px solid black;
-  margin-top: -4px;
-  left: 8px; }
-
-.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
-  overflow: auto; }
-
-.disabled-onepage-scroll .onepage-wrapper .section {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important; }
-
-.disabled-onepage-scroll .onepage-wrapper {
-  -webkit-transform: none !important;
-  transform: none !important;
-  -ms-transform: none !important;
-  min-height: 100%; }
-
-.disabled-onepage-scroll .onepage-pagination {
-  display: none; }
-
-body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
-  position: inherit; }
-
 section#banner-j5 {
   background-image: url("/images/banner/BG_1280x1024.png");
   background-repeat: no-repeat;
@@ -8508,13 +8427,13 @@ section#banner-j5 {
 
 section#equipe {
   background-image: url("/images/equipe/PatternLoop.jpg");
-  height: calc(100%);
+  height: 100%;
   /* CSS screen SM (768px - 991px) */
   /* CSS screen MD (992px - 1199px) */
   /* CSS screen LG ( >1200px) */ }
   section#equipe .fundo {
     background-image: url("/images/equipe/PatternRadial.png");
-    height: calc(100%);
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
@@ -8603,6 +8522,9 @@ section#contato {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
   /*-------------Form-------------*/
   /*-------------King Joffrey dies at his wedding-------------*/
   /*-------------Trigger Button-------------*/ }

@@ -18,7 +18,6 @@ elixir(function(mix) {
     mix.scripts([
       'jquery.min.js',
       'bootstrap.min.js',
-      'onepage-scroll.min.js',
     ],'public/scripts/libs.js', bowerDir);
 
     mix.scripts([
