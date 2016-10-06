@@ -25,11 +25,11 @@ section#banner-j5{
   }
   .agramon{
      bottom:0px;
-     img{ height: 90%; }
+     img{ height: 550px; }
    }
    .diego{
      bottom:0px;
-     img{ height: 85%; right: -50px;}
+     img{ height: 500px; right: -50px;}
    }
   .logo{
     left: calc(50% - 100px);
@@ -50,11 +50,11 @@ section#banner-j5{
   @media screen and (min-width: $screen-sm){
     .agramon{
        bottom:0px;
-       img{ height: 100%; }
+       img{ height: 90%; }
      }
      .diego{
        bottom:0px;
-       img{ height: 100%; right: initial;}
+       img{ height: 75%; right: initial;}
      }
     .logo{
       left: calc(50% - 100px);

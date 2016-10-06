@@ -13,19 +13,19 @@ section#equipe{
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      padding-top: 83px;
+      padding-top: 10px;
     }
     .titulo{
       color: white;
       font-size: 1.5em;
-      position: absolute;
-      top: 60px;
-      left: 23px;
-      right: initial;
+      position: relative;
+      top: -25px;
+      // left: 23px;
+      // right: initial;
     }
     .ph, .wads, .lg{
       img{
-        width: 200px;
+        width: 186px;
       }
       display: inline-block;
       position: relative;
@@ -39,18 +39,18 @@ section#equipe{
     }
     .ph{
       span{
-        &.nome,&.cargo{ left: -10px; }
+        &.nome,&.cargo{ left: -20px; }
       }
     }
     .wads{
       top: 0;
       span{
-        &.nome{ margin: initial; top: 0; right: -10px; }
-        &.cargo{ margin: initial; top: 20px; right: -10px; }
+        &.nome{ margin: initial; top: 0; right: -20px; }
+        &.cargo{ margin: initial; top: 20px; right: -20px; }
       }
     }
     .lg{
-      span{ right: -10px; }
+      span{ right: -20px; }
     }
   }
   /* CSS screen SM (768px - 991px) */
@@ -68,7 +68,7 @@ section#equipe{
         span{ left: initial; }
       }
       .lg{
-        span{ right: initial; }
+        span{ right: initial; right:0;}
       }
       .wads{
         span{
@@ -77,6 +77,7 @@ section#equipe{
         }
       }
       .titulo{
+        position: absolute;
         top: -50px;
         left: 0;
         right: 0;
